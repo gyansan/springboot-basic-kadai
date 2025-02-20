@@ -1,0 +1,26 @@
+package com.example.springtutorial.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+import com.example.springtutorial.service.UserService;
+
+@Controller
+public class AdminUserController {
+	private final UserService userService;
+	
+	public AdminUserController(UserService userService) {
+		this.userService = userService;
+	}
+	
+	@GetMapping("/adminuser")
+	public String adminUser(Model model) {
+		List<User> users = userSerice.getAllUsers();
+		
+		model.addAttribute("users", users);
+		
+		return "adminUserView";
+	}
+	
+	
+}

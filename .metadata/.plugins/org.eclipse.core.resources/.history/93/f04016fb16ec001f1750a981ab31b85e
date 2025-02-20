@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=devece-width, initial-scale=1">
+	<title>Spring Bootの基礎を学ぼう</title>
+</head>
+
+<body>
+
+</body>
+</html>

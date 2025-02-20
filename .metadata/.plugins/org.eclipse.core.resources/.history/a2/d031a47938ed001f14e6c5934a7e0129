@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ToDoリスト</title>
+</head>
+<body>
+
+    <h2>ToDoリスト</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>タスク</th>
+                <th>状態</th>
+            </tr>
+        </thead>
+<!--        <tbody>-->
+<!--             todos リストをループして表示 -->
+<!--            <tr th:each="todo : ${todos}">-->
+<!--                <td th:text="${todo.id}"></td>-->
+<!--                <td th:text="${todo.task}"></td>-->
+<!--                <td th:text="${todo.status}"></td>-->
+<!--            </tr>-->
+<!--        </tbody>-->
+    </table>
+
+</body>
+</html>

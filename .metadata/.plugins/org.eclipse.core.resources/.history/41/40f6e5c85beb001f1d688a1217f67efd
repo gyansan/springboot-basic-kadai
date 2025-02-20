@@ -1,0 +1,11 @@
+package com.example.springtutorial.service;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Entity
+@Table(name = "users")
+@Data
+public class UserService {
+
+}

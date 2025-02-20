@@ -1,0 +1,13 @@
+package com.example.springkadaitodo.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.springtutorial.entity.User;
+
+public class ToDoRepository {
+	
+	List<> findByUserName(String userName);
+
+}

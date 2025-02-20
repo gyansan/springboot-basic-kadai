@@ -1,0 +1,10 @@
+package com.example.springpractice.controller;
+
+@RestController
+public class HelloController {
+	@GetMapping("/")
+	public String first() {
+		return "これはRESTコントローラからのメッセージです。";
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.example.springkadaitodo.entity;
+
+import org.springframework.data.relational.core.mapping.Table;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Entity
+@Table(name = "todos")
+@Data
+public class ToDo {
+
+}

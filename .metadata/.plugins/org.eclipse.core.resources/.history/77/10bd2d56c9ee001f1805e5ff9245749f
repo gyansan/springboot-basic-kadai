@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>todoリスト</title>
+        <style>
+        table {
+            width: 100%;
+            border-collapse: separate; /* ボーダーを分離 */
+            border-spacing: 2px; /* 罫線の間隔を調整 */
+        }
+        th, td {
+            border: 3px double black; /* 2重線 */
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2; /* ヘッダーの背景色 */
+        }
+    </style>
+    </head>
+    <body>
+        <h2>ToDoリスト</h2>
+        <table>
+	        <tr>
+	            <th>ID</th>
+	            <th>タスク</th>
+	            <th>優先度</th>
+	            <th>ステータス</th>
+	        </tr>
+	        <tr th:each="todo : ${todos}">
+	            <td th:text="${todo.id}"></td>
+	            <td th:text="${todo.title}"></td>
+	            <td th:text="${todo.priority}"></td>
+	            <td th:text="${todo.status}"></td>
+        	</tr>
+    	</table>
+
+    </body>
+</html>

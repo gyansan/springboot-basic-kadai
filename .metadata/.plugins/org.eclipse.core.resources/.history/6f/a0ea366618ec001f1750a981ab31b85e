@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=devece-width, initial-scale=1">
+	<title>Spring Bootの基礎を学ぼう</title>
+</head>
+
+<body>
+	<h2>ユーザー登録フォーム</h2>
+	<form th:action="@{/register}" method="post">
+	
+
+</body>
+</html>

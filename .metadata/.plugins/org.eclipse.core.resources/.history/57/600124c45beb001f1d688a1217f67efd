@@ -1,0 +1,9 @@
+package com.example.springtutorial.service;
+
+
+@Entity
+@Table(name = "users")
+@Data
+public class UserService {
+
+}

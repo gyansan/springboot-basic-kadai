@@ -1,0 +1,9 @@
+package com.example.springkadaitodo.entity;
+
+
+@Entity
+@Table(name = "todos")
+@Data
+public class ToDo {
+
+}

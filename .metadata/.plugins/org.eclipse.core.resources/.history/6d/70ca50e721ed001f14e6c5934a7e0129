@@ -1,0 +1,9 @@
+package com.example.springkadaitodo.repository;
+
+import java.util.List;
+
+public class ToDoRepository {
+	
+	List<> findByUserName(String userName);
+
+}
