@@ -17,7 +17,7 @@ public class ToDoController {
 	@Autowired
 	public ToDoService toDoService;
 	
-	@GetMapping("/todoView")
+	@GetMapping("/todo")
 	public String getAllToDos(Model model) {
 		List<ToDo> todos = toDoService.getAllToDos();
 		model.addAttribute("todos",todos);
