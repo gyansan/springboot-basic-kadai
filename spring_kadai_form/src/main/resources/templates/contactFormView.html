@@ -10,24 +10,19 @@
     <h1>お問い合わせフォーム</h1>
 
     <form th:action="@{/confirm}" th:object="${contactForm}" method="post">
-        <div>
-            <label for="name">名前：</label>
-            <input type="text" id="name" th:field="*{name}">
-            <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red; display: block;"></span>
-        </div>
-
-        <div>
-            <label for="email">メールアドレス：</label>
-            <input type="text" id="email" th:field="*{email}">
-            <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}" style="color: red; display: block;"></span>
-        </div>
-
-        <div>
-            <label for="message">お問い合わせ内容：</label>
-            <textarea id="message" th:field="*{message}"></textarea>
-            <span th:if="${#fields.hasErrors('message')}" th:errors="*{message}" style="color: red; display: block;"></span>
-        </div>
-
+   
+        <label for="name">名前：</label>
+        <input type="text" id="name" th:field="*{name}"><br>
+        <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red; display: block;"></div>
+       
+        <label for="email">メールアドレス：</label>
+        <input type="text" id="email" th:field="*{email}"><br>
+        <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}" style="color: red; display: block;"></div>
+    
+        <label for="message">お問い合わせ内容：</label>
+        <textarea id="message" th:field="*{message}"></textarea><br>
+        <div th:if="${#fields.hasErrors('message')}" th:errors="*{message}" style="color: red; display: block;"></div>
+ 
         <button type="submit">送信</button>
     </form>
 
